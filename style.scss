@@ -61,7 +61,9 @@ main {
 
     .accordion {
       cursor: pointer;
-
+      .arrow {
+        transition: 0.3s ease-in-out;
+      }
       &:hover .label {
         color: variables.$soft_red;
       }
@@ -70,9 +72,6 @@ main {
         justify-content: space-between;
         align-items: center;
         margin: 0.2rem 0;
-        #arrow {
-          transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
       }
 
       .label {
@@ -122,7 +121,7 @@ footer {
 
 .rotate {
   rotate: 180deg;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 900px) {

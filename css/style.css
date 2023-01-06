@@ -48,6 +48,9 @@ main .box {
 .card .container .accordion {
   cursor: pointer;
 }
+.card .container .accordion .arrow {
+  transition: 0.3s ease-in-out;
+}
 .card .container .accordion:hover .label {
   color: hsl(14deg, 88%, 65%);
 }
@@ -56,9 +59,6 @@ main .box {
   justify-content: space-between;
   align-items: center;
   margin: 0.2rem 0;
-}
-.card .container .accordion .section #arrow {
-  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .card .container .accordion .label {
   margin: 0.5rem 0;
@@ -101,7 +101,7 @@ footer .attribution a {
 
 .rotate {
   rotate: 180deg;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 900px) {
