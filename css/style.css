@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+
+main .box {
+  display: none;
+}
+
+.card {
+  padding: 2rem 2rem 2.5rem;
+  width: 330px;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 20px 40px hsla(238deg, 29%, 16%, 0.5);
+}
+.card .hero {
+  position: relative;
+}
+.card .hero .mobile .pattern {
+  position: absolute;
+  width: 100%;
+  top: -30px;
+}
+.card .hero .mobile .hero_img {
+  position: absolute;
+  width: 100%;
+  top: -152px;
+}
+.card .hero .desktop {
+  display: none;
+}
+.card .container h1 {
+  text-align: center;
+  color: hsl(238deg, 29%, 16%);
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+.card .container .accordion {
+  cursor: pointer;
+}
+.card .container .accordion:hover .label {
+  color: hsl(14deg, 88%, 65%);
+}
+.card .container .accordion .section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2rem 0;
+}
+.card .container .accordion .section #arrow {
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card .container .accordion .label {
+  margin: 0.5rem 0;
+  font-size: 13px;
+  color: hsl(237deg, 12%, 33%);
+}
+.card .container .accordion .content {
+  color: hsl(240deg, 6%, 50%);
+  width: 35ch;
+  margin-bottom: 0.7rem;
+}
+.card .container .accordion .active {
+  color: hsl(238deg, 29%, 16%);
+  font-weight: 700;
+}
+.card .container .accordion hr {
+  border: 0.5px solid hsl(240deg, 5%, 91%);
+  margin: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin-inline: auto;
+  padding: 1rem;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(238deg, 29%, 16%);
+}
+footer .attribution a {
+  font-weight: 700;
+  color: hsl(240deg, 5%, 91%);
+}
+
+.hidden {
+  display: none;
+}
+
+.rotate {
+  rotate: 180deg;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    position: relative;
+  }
+  main .box {
+    display: block;
+    position: absolute;
+    top: 160px;
+    left: -93px;
+    z-index: 10;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    min-width: 600px;
+    padding: 5rem;
+    overflow: hidden;
+  }
+  .card .hero {
+    position: relative;
+  }
+  .card .hero .desktop {
+    display: block;
+  }
+  .card .hero .desktop .pattern {
+    position: absolute;
+    width: 785px;
+    top: -320px;
+    left: -535px;
+  }
+  .card .hero .desktop .hero_img {
+    position: absolute;
+    width: 400px;
+    top: -40px;
+    left: -150px;
+  }
+  .card .hero .mobile {
+    display: none;
+  }
+  .card .container h1 {
+    margin: 1rem 0;
+    text-align: start;
+  }
+  .card .container .accordion .label {
+    margin: 0.5rem 4rem 0.5rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */
