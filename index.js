@@ -1,7 +1,7 @@
 const accordionEl = document.querySelectorAll(".accordion");
 const labelEl = document.querySelectorAll(".label");
 const contentEl = document.querySelectorAll(".content");
-const arrowEl = document.querySelectorAll("#arrow");
+const arrowEl = document.querySelectorAll(".arrow");
 
 for (let i = 0; i < accordionEl.length; i++) {
   accordionEl[i].addEventListener("click", () => {
